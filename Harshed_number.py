@@ -1,10 +1,11 @@
 n=int(input())
-cpy=n
-ds=0
+s=0
+temp=n
 while n:
-    ds+=n%10
-    n//=10
-if cpy%ds==0:
-    print('True')
+    r=n%10
+    s=s+r
+    n=n//10
+if(temp%s==0):
+    print(True)
 else:
-    print('False')
+    print(False)
